@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website for cinephiles</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styless.css">
+
+
+    <meta property="og:title" content="movies and series">
+    <meta property="og:image" content="https://example.com/image.jpg">
+    <meta property="og:url" content="https://example.com/">
+    <script>
+        document.addEventListener(
+    "click",
+    function(event) {
+        var target = event.target;
+        var replyForm;
+        if (target.matches("[data-toggle='reply-form']")) {
+            replyForm = document.getElementById(target.getAttribute("data-target"));
+            replyForm.classList.toggle("d-none");
+        }
+    },
+    false
+);
+    </script>
+
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Imbue:opsz,wght@10..100,100..900&display=swap" rel="stylesheet">
+<body  style="background-color: #181D21">
+        <a href="about our project.html">
+            <img src="about white.png" alt="About" style="position: fixed; bottom: 850px; left: 1650px; ">
+            </a>
+            <a href="index.html">
+                <img src="home white.png" alt="Home" style="position: fixed; bottom: 850px; left: 1450px; ">
+                </a>
+                    <img src="getout.jpg" alt="About" style="position: fixed; bottom: 215px; left: 1400px; " width = "418" height = "600">
+                    <iframe style = "position: fixed; bottom: 330px" width="853" height="480" src="https://www.youtube.com/embed/koQKnuQb7zQ" title="Get Out  | Official Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen ></iframe>
+                   
+                      
+                    <div class="rating-area">
+                        <input type="radio" id="star-5" name="rating" value="5">
+                        <label for="star-5" title="Great movie"></label>	
+                        <input type="radio" id="star-4" name="rating" value="4">
+                        <label for="star-4" title="Good movie"></label>    
+                        <input type="radio" id="star-3" name="rating" value="3">
+                        <label for="star-3" title="Not bad moovie"></label>  
+                        <input type="radio" id="star-2" name="rating" value="2">
+                        <label for="star-2" title="Bad movie"></label>    
+                        <input type="radio" id="star-1" name="rating" value="1">
+                        <label for="star-1" title="Meh"></label>
+                    </div>
+        
+                    <div class="comment-thread">
+                        <!-- Comment 1 start -->
+                        <details open class="comment" id="comment-1">
+                            <a href="#comment-1" class="comment-border-link">
+                                <span class="sr-only">Jump to comment-1</span>
+                            </a>
+                            <summary>
+                                <div class="comment-heading">
+                                    <div class="comment-voting">
+                                        <button type="button">
+                                            <span aria-hidden="true">&#9650;</span>
+                                            <span class="sr-only">Vote up</span>
+                                        </button>
+                                        <button type="button">
+                                            <span aria-hidden="true">&#9660;</span>
+                                            <span class="sr-only">Vote down</span>
+                                        </button>
+                                    </div>
+                                    <div class="comment-info">
+                                        <a href="#" class="comment-author">someguy14</a>
+                                        <p class="m-0">
+                                            22 points &bull; 4 days ago
+                                        </p>
+                                    </div>
+                                </div>
+                            </summary>
+                    
+                            <div class="comment-body">
+                                <p>
+                                    This is really great! Thank you for posting this.
+                                </p>
+                                <button type="button" data-toggle="reply-form" data-target="comment-1-reply-form">Reply</button>
+                                <button type="button">Flag</button>
+                    
+                                <!-- Reply form start -->
+                                <form method="POST" class="reply-form d-none" id="comment-1-reply-form">
+                                    <textarea placeholder="Reply to comment" rows="4"></textarea>
+                                    <button type="submit">Submit</button>
+                                    <button type="button" data-toggle="reply-form" data-target="comment-1-reply-form">Cancel</button>
+                                </form>
+                                <!-- Reply form end -->
+                            </div>
+                    
+                            <div class="replies">
+                                <!-- Comment 2 start -->
+                                <details open class="comment" id="comment-2">
+                                    <a href="#comment-2" class="comment-border-link">
+                                        <span class="sr-only">Jump to comment-2</span>
+                                    </a>
+                                    <summary>
+                                        <div class="comment-heading">
+                                            <div class="comment-voting">
+                                                <button type="button">
+                                                    <span aria-hidden="true">&#9650;</span>
+                                                    <span class="sr-only">Vote up</span>
+                                                </button>
+                                                <button type="button">
+                                                    <span aria-hidden="true">&#9660;</span>
+                                                    <span class="sr-only">Vote down</span>
+                                                </button>
+                                            </div>
+                                            <div class="comment-info">
+                                                <a href="#" class="comment-author">randomperson81</a>
+                                                <p class="m-0">
+                                                    4 points &bull; 3 days ago
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </summary>
+                    
+                                    <div class="comment-body">
+                                        <p>
+                                            So true
+                                        </p>
+                                        <button type="button" data-toggle="reply-form" data-target="comment-2-reply-form">Reply</button>
+                                        <button type="button">Flag</button>
+                    
+                                        <!-- Reply form start -->
+                                        <form method="POST" class="reply-form d-none" id="comment-2-reply-form">
+                                            <textarea placeholder="Reply to comment" rows="4"></textarea>
+                                            <button type="submit">Submit</button>
+                                            <button type="button" data-toggle="reply-form" data-target="comment-2-reply-form">Cancel</button>
+                                        </form>
+                                        <!-- Reply form end -->
+                                    </div>
+                                </details>
+                                <!-- Comment 2 end -->
+                    
+                                <a href="#load-more">Load more replies</a>
+                            </div>
+                        </details>
+                        <!-- Comment 1 end -->
+                    </div>
+
+
+</body>
+</html>

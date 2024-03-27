@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website for cinephiles</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styless.css">
+    <style>
+        .scale {
+         transition: 1s; /* Время эффекта */
+        }
+        .scale:hover {
+         transform: scale(1.2); /* Увеличиваем масштаб */
+        }
+       </style>
+
+    <meta property="og:title" content="movies and series">
+    <meta property="og:image" content="https://example.com/image.jpg">
+    <meta property="og:url" content="https://example.com/">
+    <script>
+        document.addEventListener(
+    "click",
+    function(event) {
+        var target = event.target;
+        var replyForm;
+        if (target.matches("[data-toggle='reply-form']")) {
+            replyForm = document.getElementById(target.getAttribute("data-target"));
+            replyForm.classList.toggle("d-none");
+        }
+    },
+    false
+);
+    </script>
+
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Imbue:opsz,wght@10..100,100..900&display=swap" rel="stylesheet">
+<body  style="background-image: url('Group\ 14.png');">
+       
+            </a>
+            <a href="index.html">
+                <img src="home white.png" class = "scale" alt="Home" style="position: fixed; bottom: 850px; left: 1450px; ">
+                </a>
+                   
+             
+
+</body>
+</html>
